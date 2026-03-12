@@ -1,15 +1,15 @@
 :root {
-    --bg-dark: #05070a;
-    --card-bg: rgba(255, 255, 255, 0.03);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
+    --bg-light: #fdfdfd;
+    --card-bg: rgba(0, 0, 0, 0.02);
+    --card-border: rgba(0, 0, 0, 0.08);
+    --text-primary: #121417;
+    --text-secondary: #5f6368;
     --accent-google: #4285f4;
-    --accent-microsoft: #00a4ef;
+    --accent-microsoft: #0078d4;
     --accent-openai: #10a37f;
     --accent-meta: #0668e1;
-    --accent-apple: #f5f5f7;
-    --accent-main: #7c4dff;
+    --accent-apple: #1d1d1f;
+    --accent-main: #6236ff;
     --container-max-width: 1200px;
     --easing: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -24,7 +24,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -45,7 +45,7 @@ body {
     z-index: 1000;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--card-border);
-    background: rgba(5, 7, 10, 0.8);
+    background: rgba(253, 253, 253, 0.9);
 }
 
 .navbar .container {
@@ -64,7 +64,7 @@ body {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 1px;
-    background: linear-gradient(90deg, #fff, #7c4dff);
+    background: linear-gradient(90deg, var(--text-primary), var(--accent-main));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -130,7 +130,7 @@ nav ul li a:hover, nav ul li a.active {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(5, 7, 10, 0.2), var(--bg-dark));
+    background: linear-gradient(to bottom, rgba(253, 253, 253, 0.2), var(--bg-light));
 }
 
 .hero-content {
@@ -247,9 +247,9 @@ nav ul li a:hover, nav ul li a.active {
 
 .news-card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
 .card-tag {
@@ -321,7 +321,7 @@ time {
 .footer {
     padding: 6rem 0 3rem;
     border-top: 1px solid var(--card-border);
-    background: #030508;
+    background: #f8f9fa;
 }
 
 .footer-content {
