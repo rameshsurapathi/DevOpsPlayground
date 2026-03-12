@@ -28,7 +28,7 @@ jobs:
         run: npm install -g htmlhint
 
       - name: Run htmlhint
-        run: htmlhint ai-news-portal/index.html
+        run: htmlhint Frontend/index.html
 
   Build-Docker-Image:
     needs: Checkout-and-Test
